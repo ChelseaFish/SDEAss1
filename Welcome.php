@@ -15,7 +15,7 @@
 		echo "total amount due is: ".$amount.'<br/>';
 
 		try {
-			$conn = new PDO("sqlsrv:server = tcp:sdeass1.database.windows.net,1433; Database = SDEAss1Database", "SDEAss1", "SDEM+CAss1");
+			$conn = new PDO("mysql:host=localhost;dbname=SDEAss1Database", "SDEAss1", "SDEM+CAss1");
 			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
 		catch (PDOException $e) {

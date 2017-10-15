@@ -14,7 +14,7 @@ Number of Tyres: <input type="number" name="tyres" value="<?php echo $tyre;?>"><
     <?php 
 	{
 		try {
-			$conn = new PDO("sqlsrv:server = tcp:sdeass1.database.windows.net,1433; Database = SDEAss1Database", "SDEAss1", "SDEM+CAss1");
+			$conn = new PDO("mysql:host=localhost;dbname=SDEAss1Database", "SDEAss1", "SDEM+CAss1");
 			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
 		catch (PDOException $e) {
