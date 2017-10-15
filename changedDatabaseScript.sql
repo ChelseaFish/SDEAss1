@@ -1,3 +1,5 @@
+-- changed the name
+
 ALTER TABLE Orders 
 ADD amount NUMERIC NULL;
 
